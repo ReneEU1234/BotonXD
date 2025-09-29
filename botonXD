@@ -1,0 +1,23 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class botonXD {
+
+    public static void main(String[] args) {
+
+        JFrame ventana = new JFrame("Aquí está el Botón XD");
+        ventana.setSize(300, 200);
+        ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JButton botonAceptar = new JButton("CLICLEAME :)");
+
+        botonAceptar.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(ventana, "Hola Profe Dylan");
+            }
+        });
+
+        ventana.add(botonAceptar);
+        ventana.setVisible(true);
+    }
+}
