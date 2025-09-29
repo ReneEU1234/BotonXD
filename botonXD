@@ -9,15 +9,15 @@ public class botonXD {
         ventana.setSize(300, 200);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JButton botonAceptar = new JButton("CLICLEAME :)");
+        JButton miBoton = new JButton("CLICLEAME :)");
 
-        botonAceptar.addActionListener(new ActionListener() {
+        miBoton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog(ventana, "Hola Profe Dylan");
             }
         });
 
-        ventana.add(botonAceptar);
+        ventana.add(miBoton);
         ventana.setVisible(true);
     }
 }
